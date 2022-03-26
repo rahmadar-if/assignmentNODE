@@ -1,0 +1,20 @@
+[
+  {
+    "id" : 1,
+    "name" : "Jery",
+    "category" : "Hamster",
+    "status" : "available"
+  },
+  {
+    "id" : 2,
+    "name" : "Spike",
+    "category" : "Dog",
+    "status" : "Pending"
+  },
+  {
+    "id" : 3,
+    "name" : "Tom",
+    "category" : "Cat",
+    "status" : "Sold"
+  }
+]
