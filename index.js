@@ -14,6 +14,7 @@ const port = process.env.PORT //untuk  memanggilnya : process.env."value pada .e
 const fs = require('fs') //require untuk update file JSON
 var bodyParser = require('body-parser')// parse application/json untuk run/menjalakan method PUT dan POST tidak perlu install npm
 app.use(bodyParser.json())
+const db = require('./config/db')
 
 const pet = require('./routes/pet')
 app.use('/pet', pet) //membuat semua yang menggunakan API ".../pet" menjadi dalam 1 file saja pada folder routes

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Jery",
+    "name": "Jerry",
     "category": "Hamster",
     "status": "Available"
   },
@@ -20,7 +20,13 @@
   {
     "id": 4,
     "name": "Mickey",
-    "category": "Hamster",
-    "status": "Pending"
+    "category": "Mouse",
+    "status": "Available"
+  },
+  {
+    "id": 5,
+    "name": "Goofey",
+    "category": "Dog",
+    "status": "Sold"
   }
 ]
