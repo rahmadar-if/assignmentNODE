@@ -1,20 +1,26 @@
 [
   {
-    "id" : 1,
-    "name" : "Jery",
-    "category" : "Hamster",
-    "status" : "available"
+    "id": 1,
+    "name": "Jery",
+    "category": "Hamster",
+    "status": "Available"
   },
   {
-    "id" : 2,
-    "name" : "Spike",
-    "category" : "Dog",
-    "status" : "Pending"
+    "id": 2,
+    "name": "Spike",
+    "category": "Dog",
+    "status": "Pending"
   },
   {
-    "id" : 3,
-    "name" : "Tom",
-    "category" : "Cat",
-    "status" : "Sold"
+    "id": 3,
+    "name": "Tom",
+    "category": "Cat",
+    "status": "Sold"
+  },
+  {
+    "id": 4,
+    "name": "Mickey",
+    "category": "Hamster",
+    "status": "Pending"
   }
 ]
