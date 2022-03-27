@@ -25,6 +25,12 @@
   },
   {
     "id": 5,
+    "name": "Miny",
+    "category": "Mouse",
+    "status": "Pending"
+  },
+  {
+    "id": 6,
     "name": "Goofey",
     "category": "Dog",
     "status": "Sold"

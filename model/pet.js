@@ -1,4 +1,5 @@
 const fs = require('fs')
+const db = require('../config/db')
 
 class Pet {
 
@@ -22,6 +23,12 @@ class Pet {
         const allData = JSON.parse(fs.readFileSync('pet.json'))
         allData.splice()
         fs.writeFileSync('pet.json', JSON.stringify(allData, null, 2))
+    }
+
+    static addPet() {
+        let sql = `INSERT INTO pet (id,name,category,status) VALUES (?)`;
+        return sql;
+        
     }
 
 

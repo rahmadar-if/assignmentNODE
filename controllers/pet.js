@@ -1,4 +1,6 @@
 const Pet = require('../model/pet')
+const db = require('../config/db')
+const fs = require('fs');
 
 class controllerPet {
 
@@ -23,6 +25,26 @@ class controllerPet {
         res.status(201).json(data)
     }
     
+
+    // ADD PET
+    static addPet(req, res) {
+        let values=[req.body.id,
+            req.body.name,
+            req.body.category,
+            req.body.status];
+        
+
+        db.query(Pet.addPet(),[values],(err)=>{
+            if(err){
+                res.status(400).json(err)
+                return
+            }
+            const data = req.body
+                res.status(201)
+                res.send(data)
+        })
+        
+    }
 
 }
 

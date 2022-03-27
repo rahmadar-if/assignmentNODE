@@ -14,3 +14,4 @@ CREATE TABLE `pet` (
   PRIMARY KEY (`id`)
 );
 
+SELECT * FROM node_express.pet;
