@@ -46,8 +46,18 @@ const controllerPet = require('../controllers/pet')
         res.status(200).json({message: 'Data Deleted'})
     })
 
+    
     // CRUD for DB
+    // CREATE (FOR DB)
     router.post('/add-pet', controllerPet.addPet)
-        
+    
+    // READ (FROM DB)
+    router.get('/get-pet', controllerPet.selectPet)
+    
+    // UPDATE (FOR DB)
+    router.put('/update/:id', controllerPet.updatePet)
+    
+    // DELETE (FOR DB)
+    router.delete('/drop/:id',controllerPet.deletePet)
     
     module.exports = router

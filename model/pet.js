@@ -31,6 +31,22 @@ class Pet {
         
     }
 
+    static selectPet() {
+        let selectQuery = `SELECT * FROM pet`;
+        return selectQuery;
+    }
+
+    static updatePet(){
+        let updateQuery = `UPDATE pet SET name = ?, category = ?, status = ? WHERE id = ?` ;
+        return updateQuery;
+
+    }
+
+    static deletePet(){
+        let deleteQuery = `DELETE FROM pet WHERE id =?`;
+            return deleteQuery;
+    }
+
 
 }
 
